@@ -55,7 +55,7 @@ const CharacterCard: FC<Props> = ({ item }) => {
 				</Grid>
 			</CardContent>
 			<CardActions>
-				<Button variant="contained" endIcon={<SendIcon />} href={`/characters/${item.id}`}>
+				<Button variant="contained" endIcon={<SendIcon />} href={`/details/${item.name}`}>
 					Learn More
 				</Button>
 			</CardActions>
