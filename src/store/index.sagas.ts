@@ -1,4 +1,5 @@
-import { all } from 'redux-saga/effects';
+import { all, fork } from 'redux-saga/effects';
+import GraphQlSaga from './graphql/index.saga';
 
 /**
  * rootSaga
@@ -6,5 +7,5 @@ import { all } from 'redux-saga/effects';
  */
 
 export default function* root(): any {
-	return yield all([]);
+	return yield all([fork(GraphQlSaga)]);
 }

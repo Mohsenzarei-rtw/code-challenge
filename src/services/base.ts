@@ -14,7 +14,7 @@ interface Config {
  */
 abstract class BaseAPI {
 	protected httpService: AxiosInstance;
-	protected constructor({ suffix, baseURL }: Config) {
+	protected constructor({ suffix, baseURL = 'https://rickandmortyapi.com' }: Config) {
 		// create a new instance of the Axios with custom config.
 		this.httpService = axios.create({
 			baseURL: `${baseURL}/${suffix && suffix}`,
