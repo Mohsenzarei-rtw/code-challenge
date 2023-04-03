@@ -55,6 +55,7 @@
 		"eslint-plugin-react": "^7.32.2",
 		"husky": "^8.0.3",
 		"lint-staged": "^13.2.0",
+		"mini-css-extract-plugin": "^2.7.5",
 		"prettier": "2.8.7"
 	},
 	"lint-staged": {
