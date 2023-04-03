@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import appStore from './store';
 import { Provider } from 'react-redux';
 
+console.log(appStore);
+
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
 	<React.StrictMode>
