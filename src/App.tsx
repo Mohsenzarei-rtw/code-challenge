@@ -1,11 +1,16 @@
-import React from 'react';
-import Main from './pages/main';
+import React, { Suspense } from 'react';
+import Layout from './components/layout';
+import Loading from './components/loading';
+import { useRoutes } from 'react-router-dom';
+import Routes from './routes/routes';
 
 function App() {
+	const renderRoutes = useRoutes(Routes);
+
 	return (
-		<div className="App">
-			<Main />
-		</div>
+		<Layout>
+			<Suspense fallback={<Loading />}>{renderRoutes}</Suspense>
+		</Layout>
 	);
 }
 
